@@ -1,0 +1,248 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+	font-size:62.5%;
+}
+
+@font-face {
+	font-family:Vogue;
+	src:url('../fonts/Vogue.woff') format('woff');
+}
+
+@font-face {
+	font-family:Source Sans Pro;
+	src:url('../SourceSansPro-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family:Fragment Core;
+	src:url('../FragmentCore.woff') format('woff');
+}
+
+@font-face {
+	font-family:Typewriter Condensed;
+	src:url('../typewcond_regular.woff') format('woff');
+}
+
+a {
+	text-decoration:none;
+}
+
+li {
+	list-style:none;
+}
+
+.open {
+	display:block !important;
+}
+
+.inactive {
+	display:none;
+}
+
+#headerContainer {
+	display:grid;
+	width:100%;
+}
+
+#headerContainer .bannerContainer .logo {
+	font-family:Vogue;
+	color:#000;
+}
+
+.bannerContainer form .searchBtn {
+	border:0;
+	background-color:transparent;
+	padding:0;
+	cursor:pointer;
+}
+
+.bannerContainer .user {
+	display:grid;
+}
+
+#headerContainer .bannerContainer .user .userSignned {
+	color:green;
+}
+#headerContainer .bannerContainer .user .userSign {
+	color:#F00;
+}
+
+.bannerContainer .user .userCart {
+	color:#000;
+}
+
+#headerContainer .bannerContainer {
+	display:grid;
+}
+
+main .products .details a {
+	color:#000;
+	font-family:Arial, sans-serif;
+}
+
+footer .copyrightContainer p a {
+	color:#000;
+}
+
+
+@media (min-width:0) and (max-width:749px) {
+	
+}
+
+@media (min-width:1024px) {
+
+	#headerContainer {
+	}
+
+	.bannerContainer {
+		grid-template-columns:1fr 1fr 1fr;
+		align-items:center;
+		padding-top:30px;
+		margin:0 55px;
+	}
+
+	
+
+	.bannerContainer form .fas {
+
+	}
+
+	.bannerContainer .logo {
+		font-size:2.5rem;
+		letter-spacing: 0.1rem;
+		text-align:center;
+		margin-top:40px;
+	}
+
+	.bannerContainer .user {
+		grid-template-columns:repeat(2,auto);
+		grid-column-gap:20px;
+		justify-content:end;
+	}
+
+	#headerContainer .categories {
+		margin-top:40px;
+		text-align:center;
+	}
+
+	#headerContainer .categories li {
+		display:inline-block;
+		margin-right:14px;
+	}
+
+	#headerContainer .categories li a {
+		font-size:1.6rem;
+		color:#000;
+		font-family:Arial, sans-serif;
+	}
+
+	main .productsWrapper {
+		padding-top:100px;
+		margin:0 50px 0 50px;
+	}
+
+	main .productsWrapper .products .productOverall:hover {
+		opacity:0.6;
+	}
+
+	main .products {
+		display:grid;
+		grid-template-columns:repeat(3,1fr);
+		grid-column-gap:30px;
+		grid-row-gap:50px;
+	}
+
+	main .products a {
+		display:block;
+	}
+
+	main .products .productImage img {
+		width:100%;
+	}
+
+	main .products .details {
+		margin-left:45px;
+		font-size:1.5rem;
+	
+	}
+
+	main .products .details .productName {
+		margin-bottom:7px;
+	}
+
+
+	footer .questions {
+		margin-top:145px;
+		text-align:center;
+	}
+
+	footer .questions li {
+		display:inline-block;
+		margin-right:20px;
+	}
+
+	footer .questions li a {
+		font-size:1.6rem;
+		color:#000;
+	}
+	
+	footer .copyrightContainer {
+		display:grid;
+		grid-template-columns:repeat(2,auto);
+		justify-content: center;
+		grid-column-gap:25px;
+		margin-top:50px;
+		margin-bottom:50px;
+	}
+
+	footer .copyrightContainer p {
+		font-size:1.3rem;
+		font-family:Arial, sans-serif;
+	}
+
+	
+}
+
